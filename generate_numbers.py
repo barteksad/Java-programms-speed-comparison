@@ -19,6 +19,4 @@ if __name__ == '__main__':
     random.seed(42)
     os.environ['PYTHONHASHSEED'] = '42'
 
-    generate_and_save(1_000);
-    generate_and_save(10_000);
-    generate_and_save(100_000);
+    generate_and_save(1_000_000);

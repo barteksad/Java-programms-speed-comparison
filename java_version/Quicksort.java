@@ -1,6 +1,6 @@
 package java_version;
 
-class Quicksort
+public class Quicksort
 {
     private static final void swap(int[] array, int elem1_index, int elem2_index)
     {
