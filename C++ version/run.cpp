@@ -5,14 +5,19 @@ using namespace std;
 
 int main()
 {
-    int n_numbers = 1000000;
-    int *array = new int[n_numbers];
-    ifstream file;
-    file.open("../" + to_string(n_numbers) + "_numbers.txt");
+    for(int j=0;j<10;j++)
+    {
 
-    int i = 0;
-    while(!file.eof())
-        file >> array[i++];
+        int n_numbers = 1000000;
+        int *array = new int[n_numbers];
+        ifstream file;
+        file.open("../" + to_string(n_numbers) + "_numbers.txt");
 
-    qsort(array, array + n_numbers,less<int>());
+        int i = 0;
+        while(!file.eof())
+            file >> array[i++];
+
+        qsort(array, array + n_numbers,less<int>());
+        free(array);
+    }
 }

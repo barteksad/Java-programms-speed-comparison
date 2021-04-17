@@ -1,7 +1,7 @@
 import random
 import os
 
-def generate_and_save(how_many, lower_bound = 0, upper_bound = 1e6):
+def generate_and_save(how_many, lower_bound = 0, upper_bound = 1e7):
     nums = []
 
     for i in range(how_many):
